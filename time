@@ -1,0 +1,9 @@
+    current_time = datetime(year=2026, month=5, day=19, hour=13, minute=0, second=0, tzinfo=timezone.utc)
+    julian_day, day_fraction = jday(
+        current_time.year,
+        current_time.month,
+        current_time.day,
+        current_time.hour,
+        current_time.minute,
+        current_time.second + current_time.microsecond / 1e6
+    )
